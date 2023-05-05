@@ -58,5 +58,28 @@ public class BOJ12891 {
                     break;
             }
         }
+         private static void Remove(char c){
+            switch (c) {
+                case 'A':             
+                    if (myArr[0] == checkArr[0])
+                        checkSecret--;
+                    myArr[0]--;
+                    break;
+                case 'C':
+                    if (myArr[1] == checkArr[1])
+                        checkSecret--;
+                    myArr[1]--;
+                    break;
+                case 'G':
+                    if (myArr[2] == checkArr[2])
+                        checkSecret--;
+                    myArr[2]--;
+                    break;
+                case 'T':
+                    if (myArr[3] == checkArr[3])
+                        checkSecret--;
+                    myArr[3]--;
+                    break;
+            }
     }
 

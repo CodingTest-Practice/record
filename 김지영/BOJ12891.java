@@ -33,6 +33,19 @@ public class BOJ12891 {
         for (int i = 0; i < P; i++) {
             Add(A[i]);
         }
+        
+        if (checkSecret == 4){
+            Result++;
+            
+        for (int i = P; i < S; i++){
+            int j = i - P;
+            Add(A[i]);
+            Remove(A[j]);
+            if (chenckSecret == 4)
+                Result++;
+        }
+            System.out.println(Result);
+            br.close();
     }
         private static void Add(char c){
             switch (c) {
